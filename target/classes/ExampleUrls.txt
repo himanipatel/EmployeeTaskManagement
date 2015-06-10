@@ -1,0 +1,33 @@
+// get operation
+http://localhost:8080/etms/webservices/etmsRest/project/1
+
+// post operation (add project)
+http://localhost:8080/etms/webservices/etmsRest/project
+
+in Request Body:
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+	<description>test</description>
+	<managerId>2</managerId>
+	<name>Video Camera Streaming 9</name>
+	<teamMember>2</teamMember>
+</project>
+
+//Content-type in request header should be XML
+
+// Delete operation
+http://localhost:8080/etms/webservices/etmsRest/project/10
+// you can set available project id
+
+// put operation
+http://localhost:8080/etms/webservices/etmsRest/project/15
+
+In Request Body:
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+	<description>test</description>
+	<managerId>2</managerId>
+	<name>Video Camera Streaming 10</name>
+	<projectId>15</projectId>
+	<teamMember>2</teamMember>
+</project>
